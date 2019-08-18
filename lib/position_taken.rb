@@ -6,5 +6,7 @@
 # <=  false - if position is not taken
 # <=  true - if the position is taken
 def position_taken?(board, index)
-  return !(board[index] == " " || board[index] == "")
+  return !( board[index] == " " || 
+            board[index] == "" || 
+            board[index] == nil)
 end
